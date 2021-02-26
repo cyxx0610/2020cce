@@ -13,6 +13,7 @@ int main()
 }
 
 ```
+
 ## 因數個數
 ```c
 #include <stdio.h>
