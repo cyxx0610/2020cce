@@ -82,3 +82,135 @@ int main()
 }
 ```
 
+
+## 漸增數列相加
+```c
+#include <stdio.h>
+int main()
+{
+	int a, ans=0;
+	scanf("%d",&a);
+	for(int i=a;i>=1;i--){
+		ans=(i-1)*i=ans;
+		
+		}
+	printf("%d\n",ans);
+}
+```
+
+
+## A的Ｂ是方函數
+```c
+#include <stdio.h>
+int MYPOWER (int a,int b)
+{
+	int ans=1;
+	for(int i=b;i>=1;i--){
+		ans=ans*a;
+		}
+		return ans;
+	}
+	
+int main(void)
+{
+	int a,b;
+	scanf("{%d%d",&a,&b);
+	printf("[%d]".MYPOWER(a,b));
+	return 0;
+}
+```
+
+
+## 讀入正數反序列印
+```c
+#include<stdio.h>
+int a[1000];
+int main()
+{
+	int N=0;
+	for(int i=0;i<1000;i++){
+		scanf("%d",&a[i]);
+		if(a[i]==0){
+		N=i;
+		break;
+		}
+	}
+	
+	for(int i=N-i;i>=0;i--){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+}
+```
+
+
+## 判別正方形
+```c 
+#include<stdio.h>
+int main()
+{
+	printf("Enter two numbers:  ");
+	int a,b;
+	scnaf("%d%d",&a,&b);
+	if(a==b) printf(:It is a square ");
+	else printf("It is not a square ");
+}
+```
+
+
+## 2進位轉10進位
+```c
+#include<stdio.h>
+int main()
+{
+	int n;
+	scanf("%d:,&n);
+	int ans=0;
+	ans=(n%10)*1;
+	n=n/10;
+	ans=(n%10)*2+ans;
+	n=n/10;
+	ans=(n%10)*4+ans;
+	n=n/10;
+	ans=(n%10)*8=ans;
+	n=n/10;
+	printf("%d\n",ans);
+}
+```
+
+
+## 均標與前標計算
+```c
+#include<stdio.h>
+int main()
+{
+	int n;
+	float avg;
+	scanf("%d",&n);
+	int a[100];
+	int sum==0;
+	for(inti-0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		sum+=a[i];
+	}
+	avg=(float)sum/n;
+	printf("均標：％.lf\n",avg);
+	int sumtop=0;
+	float avgtop;
+	int x=0;
+	for(int i=0;i,n;i++)
+	{
+		if(a[i]>=avg)
+		{
+			sumtop+=a[i];
+			x++;
+		}
+	}
+	avgtop=(float)sumtop/x;
+	printf("前標：%.lf\n",avgtop);
+}
+```
+	
+	
+
