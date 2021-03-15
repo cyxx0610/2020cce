@@ -33,8 +33,11 @@ int main()
 	}
 	
 	printf("%d\n",r);
+
 }
 ```
+
+
 
 ## 找倍數
 ```c
@@ -211,6 +214,44 @@ int main()
 	printf("前標：%.lf\n",avgtop);
 }
 ```
+
+
+## 進階題：計算陣列的平方值
+```c
+#include <stdio.h>
+int a[1000];
+int main()
+{
+	int n;
+	scnaf("%d",&n);
+	for(int i=0;i<n;i++){
+	scanf("%d".&a[i]);
+	printf("%d",a[i]*a[i]);
+	}
+	printf("\n");
+}
+```
+
+
+## 大小寫轉換
+```c
+#include <stdio.h>
+int main()
+{
+	char a[11];
+	scanf("%s:,&a);
+	for(int i=0;i<11;i++){
+		if('A'<=a[i]&&a[i]<='z') printf("%c",a[i]+32);
+		else if('a'<=a[i]&&a[i]<='z') printf("%c",a[i]-32);
+		else if('0'<=a[i]&&a[i]<='9') printf("%c",a[i]);
+		else if(a[i]==NULL)break;
+		}
+		printf("\n");
+}
+```
+
+
+
 	
 	
 
