@@ -233,7 +233,7 @@ int main()
 ```
 
 
-## 大小寫轉換
+## 進階題：大小寫轉換
 ```c
 #include <stdio.h>
 int main()
@@ -250,6 +250,69 @@ int main()
 }
 ```
 
+## 計程車資計算
+```c
+#include <stdio.h>
+int main()
+{
+	int n,a;
+	int ans=0,i=o;
+	scanf("%d",&n);
+	if(n>2000)
+	{
+		a=100;i++;
+		if(i>=1)
+		{
+			a+=5;
+		}
+		ans=((n-2000)/500)*5+a;
+		printf("%d\n",ans);
+	}
+	else printf("%d\n",100);
+}
+```
+## 兩數間可倍5整除的整數
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d",&a,&b);
+	if(a>b)
+	{
+	c=a;
+	a=b;
+	b=c;
+	}
+	for(int i=a;i<=b;i++)
+	{
+	if(i%5==0)printf("%d\n",i);
+	}
+}
+```
+
+
+## 整數間最大的距離
+```c
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int min,max;
+	for(int i=0;i<3;i++)
+	{
+	scanf("%d",&a[i]);
+	min=a[0];
+	max=a[i];
+	}
+	for(int i=0;i<3;i++)
+	{
+	if(min>a[i]min=a[i];
+	if(max<a[i]max=a[i];
+	}
+	printf("%d\n",max-min);
+}
+```
 
 
 	
