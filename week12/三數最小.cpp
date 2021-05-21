@@ -1,12 +1,14 @@
 #include <stdio.h>
+int min(int a,int b,int c)
+{
+	int ans=a;
+	if(ans>b)ans=b;
+	if(ans>c)ans=c;
+	return ans;
+}
 int main()
 {
-	int a,b,ans=0;
-	scanf("%d%d",&a,&b);
-	b=b*6;
-	ans=a-b;
-	int c,d;
-	c=ans/6;
-	d=ans%6;
-	printf("%d %d",c,d);
+	int x,y,z;
+	scanf("%d%d%d",&x,&y,&z);
+	printf("%d\n",min(x,y,z));
 }
